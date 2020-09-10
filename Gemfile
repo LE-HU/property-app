@@ -12,6 +12,9 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.7'
 gem 'bootsnap', '>= 1.4.2', require: false
 gem 'devise', '~> 4.7', '>= 4.7.2'
+gem 'carrierwave', '~> 2.1'
+gem 'fog-aws', '~> 3.6', '>= 3.6.7'
+gem 'mini_magick', '~> 4.10', '>= 4.10.1'
 
 group :development, :test do
 
