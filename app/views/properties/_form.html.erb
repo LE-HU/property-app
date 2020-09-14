@@ -33,7 +33,7 @@
     <%= f.file_field :photo, class: "form-control" %>
     <%= f.hidden_field :photo_cache %>
     <% if @property.photo.present? %>
-      <%= image_tag @property.photo.thumb.url, class: "my-2" %>
+      <%= image_tag @property.photo.thumb.url, class: "my-4" %>
     <% end %>
 
   </div>
