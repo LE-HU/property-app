@@ -1,24 +1,15 @@
-# README
+# Property-app
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### Online property marketplace, find you new home today!
 
-Things you may want to cover:
+Project inspired by youtube creator David Battersby.
 
-* Ruby version
+App allows for-sale property listing, using 'agent' accounts.
 
-* System dependencies
+MVP design, many non-functional buttons/ideas as of now.
 
-* Configuration
+Live:
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- Heroku hosting
+- Devise authentication
+- Amazon S3 production image storage
