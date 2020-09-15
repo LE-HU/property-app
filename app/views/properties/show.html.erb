@@ -1,27 +1,44 @@
-<p>
-  <strong>Name:</strong>
-  <%= @property.name %>
-</p>
+<div class="property-background"
+     style="background-image:url('<%= property_photo_url(@property) %>')">
 
-<p>
-  <strong>Address:</strong>
-  <%= @property.address %>
-</p>
+</div>
 
-<p>
-  <strong>Price:</strong>
-  <%= @property.price %>
-</p>
+<div class="container m-auto">
+  <div class="row my-4">
+    <div class="col-md-8">
 
-<p>
-  <strong>Rooms:</strong>
-  <%= @property.rooms %>
-</p>
+      <p>
+        <strong>Name:</strong>
+        <%= @property.name %>
+      </p>
 
-<p>
-  <strong>Bathrooms:</strong>
-  <%= @property.bathrooms %>
-</p>
+      <p>
+        <strong>Address:</strong>
+        <%= @property.address %>
+      </p>
 
-<%= link_to 'Edit Property', edit_property_path(@property), class: "btn btn-primary mr-2" %>
-<%= link_to 'Back', properties_path, class: "btn btn-secondary" %>
+      <p>
+        <strong>Price:</strong>
+        <%= @property.price %>
+      </p>
+
+      <p>
+        <strong>Rooms:</strong>
+        <%= @property.rooms %>
+      </p>
+
+      <p>
+        <strong>Bathrooms:</strong>
+        <%= @property.bathrooms %>
+      </p>
+
+      <%= link_to 'Edit Property', edit_property_path(@property), class: "btn btn-primary mr-2" %>
+      <%= link_to 'Back', properties_path, class: "btn btn-secondary" %>
+    </div>
+
+    <div class="col-md-4">
+      <%= render "properties/agent_details"%>
+    </div>
+
+  </div>
+</div>

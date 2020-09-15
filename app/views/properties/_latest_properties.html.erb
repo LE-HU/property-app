@@ -1,6 +1,9 @@
 <% @properties.each do |property| %>
   <div class="col-md-4">
-    <%= image_tag property_thumbnail(property), class: "my-4" %>
+
+    <%= link_to property_thumbnail(property), property_path(property) %>
+
+    <%# <%= image_tag property_thumbnail(property), class: "my-4" %>
     <h2 class="h3 mb-3"><%= property.name %></h2>
     <p class="font-italic"><%= property.address %></p>
     <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex quo modi deserunt fugit aliquam officiis eum aliquid dolores harum quos.</p>
